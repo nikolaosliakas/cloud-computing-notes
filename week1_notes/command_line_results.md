@@ -7,7 +7,7 @@ src
 liakasn@cloud-vm:~$ pico src/generator.py
 liakasn@cloud-vm:~$ pico src/collector.py
 liakasn@cloud-vm:~$ sudo python3 src/generator.py 20 /var/www/html
-liakasn@cloud-vm:~$ sudo python3 src/collector.py /var/www/html/data.json
+liakasn@cloud-vm:~$ sudo python3 src/collector.py http://34.67.73.252/data.json
 server0 71
 server1 47
 server2 85

@@ -20,6 +20,7 @@ if __name__ == '__main__':
     # Access variables from shell
     # python generator.py num_of_servers path
     # ex. nl@Ns-MacBook-Air-2 cloud-computing-notes % python week1_notes/generator.py 6 result
+    #       /var/www/html -- this allows exposure to html exposure
     """
     print(sys.argv[0]) # prints generator.py
     print(sys.argv[1]) # prints num_of_servers

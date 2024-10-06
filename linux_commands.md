@@ -19,7 +19,7 @@ liakasn@cloud-vm:~$ sudo adduser bolano
 - `pwd` → Shows the directory path
 - `ls` → Lists files and folders
 - `cd testfolder` → Navigates to the testfolder
-- cd .. → Navigates up one directory level
+- `cd ..` → Navigates up one directory level
 - `mkdir` → Creates a new directory
 - `pico` → Unix editor (we need to save and exit using a combination of keys)
 - `cp a.txt b.txt` → Create a copy of file a.txt to a new file b.txt

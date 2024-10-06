@@ -1,4 +1,5 @@
 import json
+import sys
 
 def read_json_from_path(path: str) -> dict:
 
@@ -24,8 +25,11 @@ def count_server_utilization(server_dict: dict):
 
 
 if __name__ == '__main__':
-
-    data_dict = read_json_from_path('../result')
+    """
+    refer to ./generator.py for docs
+    first argument is generator.py second AKA index 1 is path before /data.json
+    """
+    data_dict = read_json_from_path(sys.argv[1])
     count_server_utilization(server_dict=data_dict)
 
 

@@ -1,10 +1,10 @@
 import json
 import sys
+import requests
 
 def read_json_from_path(path: str) -> dict:
-
-    with open(f'{path}', 'r') as fp:
-        server_dict = json.load(fp)
+    r = requests.get(path)
+    server_dict = json.loads(r.content.decode('utf-8'))
 
     return server_dict
 
@@ -29,7 +29,8 @@ if __name__ == '__main__':
     refer to ./generator.py for docs
     first argument is generator.py second AKA index 1 is path.
     """
+
+    # data_dict = read_json_from_path('http://34.67.73.252/data.json')
     data_dict = read_json_from_path(sys.argv[1])
     count_server_utilization(server_dict=data_dict)
-
 

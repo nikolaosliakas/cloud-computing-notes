@@ -7,6 +7,10 @@ app.get('/', (req, res)=> {
     res.send('You are in your home page!')
 })
 
+app.get('/movies', (req, res)=> {
+    res.send('You are in movies!')
+})
+
 // 3. Start the server 
 app.listen(3000, ()=>{
     console.log('Server is up and running')

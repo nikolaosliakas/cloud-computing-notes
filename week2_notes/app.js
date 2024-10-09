@@ -5,6 +5,9 @@ const app = express()
 const movieRoute = require('./routes/movies')
 const userRoute = require('./routes/users')
 
+const process = require('process')
+process.title = 'myApp'
+
 // 2. Middleware
 app.use('/movies', movieRoute) // when user navigates from / to /movies go to movieRoute
 app.use('/users', userRoute)

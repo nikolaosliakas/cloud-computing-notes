@@ -12,4 +12,15 @@ router.get('/', async (req, res)=>{
     }
 })
 
+// request specific feedback from user
+router.get('/:filmID', async(req,res)=>{
+    try{
+        const filmByID = await Film.findById(req.params.filmID)
+        res.send(filmByID)
+    }catch(err){
+        res.send({message:err})
+    }
+})
+
+
 module.exports = router
